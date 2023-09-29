@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(134, 133, 133, 0.623);
+    background-color: #8685859f;
     border: 1px solid rgba(68, 62, 62, 0.144);
     width: 350px;
     margin: 0 auto;
@@ -11,6 +11,7 @@
 }
 
 .btn {
+    background-color: #25aae79f;
     width: 150px;
     border-radius: 50px;
     padding: 10px;
@@ -33,10 +34,12 @@
     width: 300px;
     height: 600px;
     display: flex;
+    gap: 20px;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
-    font-size: 56px;
+    flex-direction: column;
     margin-top: 10px;
     border-radius: 16px;
-    
+
 }

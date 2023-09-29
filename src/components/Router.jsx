@@ -1,16 +1,16 @@
 import React from 'react'
-import Home from './pages/Home'
 import { Route, Routes } from "react-router-dom"
-import About from './pages/About'
-import Profil from './pages/Profil'
 import { AnimatePresence } from "framer-motion"
+import Rout from "./page/Rout"
+import Rout2 from './page/Rout2'
+import Rout3 from './page/Rout3'
 const Router = () => {
     return (
         <AnimatePresence>
             <Routes>
-                    <Route path='/home' element={<Home />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path='/profil' element={<Profil />} />
+                <Route path='/' element={<Rout />} />
+                <Route path='/:id' element={<Rout2 />} />
+                <Route path='/:id/:getID' element={<Rout3 />} />
             </Routes>
         </AnimatePresence>
     )
