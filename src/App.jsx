@@ -1,16 +1,15 @@
-import React from 'react'
-import "./index.css"
-import Btns from './components/Btns'
-import Router from './components/Router'
-import { BrowserRouter } from 'react-router-dom'
+import React from 'react';
+import TodoApp from './components/redux/TodoApp';
+import { Route, Routes, BrowserRouter as Routers } from "react-router-dom"
 const App = () => {
 
   return (
-    <BrowserRouter>
-      {/* <Btns /> */}
-      <Router />
-    </BrowserRouter>
-  )
-}
+    <Routers>
+      <Routes>
+        <Route path='/' element={<TodoApp />} />
+      </Routes>
+    </Routers>
+  );
+};
 
-export default App
+export default App;
