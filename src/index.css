@@ -68,11 +68,17 @@ a {
     color: black;
 }
 
+.dark select {
+    color: black;
+}
+
+.dark option {
+    color: black;
+}
+
 .light div {
     color: black;
-
     transition: color 0.5s;
-
 }
 
 .light * {
@@ -96,6 +102,4 @@ a {
     transform: translateX(60%);
 }
 
-.header {
-    
-}
+.header {}
