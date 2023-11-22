@@ -1,15 +1,14 @@
-import React from 'react';
-import TodoApp from './components/redux/TodoApp';
-import { Route, Routes, BrowserRouter as Routers } from "react-router-dom"
+import React from 'react'
+import Header from './components/header/Header'
+import Router from './components/Router'
 const App = () => {
 
   return (
-    <Routers>
-      <Routes>
-        <Route path='/' element={<TodoApp />} />
-      </Routes>
-    </Routers>
-  );
-};
+    <div className={`containers `}>
+      <Header />
+      <Router />
+    </div>
+  )
+}
 
-export default App;
+export default App

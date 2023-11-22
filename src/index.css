@@ -25,21 +25,77 @@
     color: black;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .active {
     background-color: white;
 }
 
 .containers {
     margin: 0 auto;
-    width: 300px;
-    height: 600px;
-    display: flex;
-    gap: 20px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
     flex-direction: column;
-    margin-top: 10px;
-    border-radius: 16px;
+    text-decoration: none;
 
+}
+
+.light {
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+
+.dark {
+    background-color: rgb(35, 33, 63);
+    transition: background-color 0.5s;
+}
+
+.dark div {
+    color: #fff;
+    transition: color 0.5s;
+
+}
+
+.dark * {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.dark input {
+    color: black;
+}
+
+.light div {
+    color: black;
+
+    transition: color 0.5s;
+
+}
+
+.light * {
+    color: black;
+    transition: color 0.5s;
+}
+
+.categoriy {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 40px;
+    gap: 40px;
+}
+
+.lightDark {
+    padding: 10px;
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    text-transform: capitalize;
+    transform: translateX(60%);
+}
+
+.header {
+    
 }

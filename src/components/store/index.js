@@ -1,7 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit"
-import todoReducer from "./todoSilce"
-export default configureStore({
-  reducer: {
-    todos: todoReducer,
-  }
+import modalSilce from "./modal"
+import countriesSlice from "./countriesSlice"
+export const store = configureStore({
+    reducer: {
+        countries: countriesSlice,
+        modalSilce: modalSilce
+    }
 })
